@@ -1,0 +1,608 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<sbml xmlns="http://www.sbml.org/sbml/level2/version4" level="2" metaid="metaid_0000001" version="4">
+  <model id="Ma2002_cAMP_oscillations" name="Ma2002_cAMP_oscillations" metaid="metaid_0000002">
+    <notes>
+      <body xmlns="http://www.w3.org/1999/xhtml">
+        <p>
+      This a model from the article:
+      <br/>
+        <strong> Quantifying robustness of biochemical network models.
+</strong>
+        <br/>
+Ma L, Iglesias PA.
+      <em>BMC Bioinformatics.</em>2002 Dec 13;3:38.
+      <a href="http://www.ncbi.nlm.nih.gov/pubmed/12482327">12482327</a>,
+      <br/>
+        <strong>Abstract:</strong>
+        <br/>
+BACKGROUND: Robustness of mathematical models of biochemical networks is important for validation purposes and can be used as a means of selecting between different competing models. Tools for quantifying parametric robustness are needed. RESULTS: Two techniques for describing quantitatively the robustness of an oscillatory model were presented and contrasted. Single-parameter bifurcation analysis was used to evaluate the stability robustness of the limit cycle oscillation as well as the frequency and amplitude of oscillations. A tool from control engineering--the structural singular value (SSV)--was used to quantify robust stability of the limit cycle. Using SSV analysis, we find very poor robustness when the model's parameters are allowed to vary. CONCLUSION: The results show the usefulness of incorporating SSV analysis to single parameter sensitivity analysis to quantify robustness.
+   </p>
+        <br/>
+        <p> This model is originally proposed by Laub and Loomis (1998).[Laub MT, Loomis WF (1998). A molecular network that produces spontaneous oscillations in excitable cells of Dictyostelium.  Mol Biol Cell. 9(12):3521-32. PubMED: <a href="http://www.ncbi.nlm.nih.gov/pubmed/12482327">12482327</a>.
+<br/>
+The parameters used in this model (Ma and Iglesias, 2002), are different from that used in the original model (Laub and Loomis, 1998), because of the typographical errors in the original paper. The parameters used in the model presented by Ma and Iglesias, are obtained directly from the authors of original publication (Laub and Loomis, 1998). These parameters are also used in the website for the Laub-Loomis model, <a href="http://www-biology.ucsd.edu/labs/loomis/network/laubloomis.html">http://www-biology.ucsd.edu/labs/loomis/network/laubloomis.html</a>.  
+<br/>
+By using this model, Kim et al., 2006 [Kim J, Bates DG, Postlethwaite I, Ma L, Iglesias PA. (2006) Robustness analysis of biochemical network models. Syst Biol (Stevenage). 153(3):96-104. PubMED: <a href="http://www.ncbi.nlm.nih.gov/pubmed/16984084">16984084</a>], validate and extend the analysis approach proposed by Ma and Iglesias (2002), by showing how hybrid optimisation can be used to compute worst-case parameter combinations in the model.
+</p>
+        <br/>
+        <p>This model originates from BioModels Database: A Database of Annotated Published Models. It is copyright (c) 2005-2010 The BioModels Team.<br/>For more information see the <a href="http://www.ebi.ac.uk/biomodels/legal.html" target="_blank">terms of use</a>.<br/>To cite BioModels Database, please use <a href="http://www.pubmedcentral.nih.gov/articlerender.fcgi?tool=pubmed&amp;pubmedid=16381960" target="_blank">Le Novère N., Bornstein B., Broicher A., Courtot M., Donizelli M., Dharuri H., Li L., Sauro H., Schilstra M., Shapiro B., Snoep J.L., Hucka M. (2006) BioModels Database: A Free, Centralized Database of Curated, Published, Quantitative Kinetic Models of Biochemical and Cellular Systems Nucleic Acids Res., 34: D689-D691.</a>
+      </p>
+    </body>
+  </notes>
+    <annotation>
+	<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+	<rdf:Description rdf:about="#metaid_0000002">
+	<dc:creator>
+	<rdf:Bag>
+	<rdf:li rdf:parseType="Resource">
+	<vCard:N rdf:parseType="Resource">
+	<vCard:Family>Chelliah</vCard:Family>
+	<vCard:Given>Vijayalakshmi</vCard:Given>
+	</vCard:N>
+	<vCard:EMAIL>viji@ebi.ac.uk</vCard:EMAIL>
+	<vCard:ORG rdf:parseType="Resource">
+	<vCard:Orgname>EMBL-EBI</vCard:Orgname>
+	</vCard:ORG>
+	</rdf:li>
+	<rdf:li rdf:parseType="Resource">
+	<vCard:N rdf:parseType="Resource">
+	<vCard:Family>Ma</vCard:Family>
+	<vCard:Given>Lan</vCard:Given>
+	</vCard:N>
+	<vCard:EMAIL>lma@jhu.edu</vCard:EMAIL>
+	<vCard:ORG rdf:parseType="Resource">
+	<vCard:Orgname>Department of Electrical and Computer Engineering, The Johns Hopkins University, Baltimore, MD USA</vCard:Orgname>
+	</vCard:ORG>
+	</rdf:li>
+	</rdf:Bag>
+	</dc:creator>
+	<dcterms:created rdf:parseType="Resource">
+	<dcterms:W3CDTF>2009-08-18T15:45:28Z</dcterms:W3CDTF>
+	</dcterms:created>
+	<dcterms:modified rdf:parseType="Resource">
+	<dcterms:W3CDTF>2014-04-07T01:07:39Z</dcterms:W3CDTF>
+	</dcterms:modified>
+	<bqmodel:is>
+	<rdf:Bag>
+	<rdf:li rdf:resource="http://identifiers.org/biomodels.db/MODEL0606755064"/>
+	</rdf:Bag>
+	</bqmodel:is>
+	<bqmodel:is>
+	<rdf:Bag>
+	<rdf:li rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000229"/>
+	</rdf:Bag>
+	</bqmodel:is>
+	<bqmodel:isDescribedBy>
+	<rdf:Bag>
+	<rdf:li rdf:resource="http://identifiers.org/pubmed/12482327"/>
+	</rdf:Bag>
+	</bqmodel:isDescribedBy>
+	<bqmodel:isDerivedFrom>
+	<rdf:Bag>
+	<rdf:li rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000099"/>
+	</rdf:Bag>
+	</bqmodel:isDerivedFrom>
+	<bqbiol:hasTaxon>
+	<rdf:Bag>
+	<rdf:li rdf:resource="http://identifiers.org/taxonomy/44689"/>
+	</rdf:Bag>
+	</bqbiol:hasTaxon>
+	<bqbiol:isVersionOf>
+	<rdf:Bag>
+	<rdf:li rdf:resource="http://identifiers.org/go/GO:0006935"/>
+	<rdf:li rdf:resource="http://identifiers.org/go/GO:0007622"/>
+	</rdf:Bag>
+	</bqbiol:isVersionOf>
+	<bqbiol:hasPart>
+	<rdf:Bag>
+	<rdf:li rdf:resource="http://identifiers.org/kegg.pathway/xcc02030"/>
+	</rdf:Bag>
+	</bqbiol:hasPart>
+	</rdf:Description>
+	</rdf:RDF>
+	</annotation>
+      <listOfCompartments>
+      <compartment id="compartment" name="compartment" metaid="metaid_0000017" size="1"/>
+    </listOfCompartments>
+    <listOfSpecies>
+      <species id="ACA" initialConcentration="3.39" name="ACA" metaid="metaid_0000019" sboTerm="SBO:0000014" compartment="compartment">
+        <annotation>
+	<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+	<rdf:Description rdf:about="#metaid_0000019">
+	<bqbiol:isVersionOf>
+	<rdf:Bag>
+	<rdf:li rdf:resource="http://identifiers.org/interpro/IPR008172"/>
+	</rdf:Bag>
+	</bqbiol:isVersionOf>
+	</rdf:Description>
+	</rdf:RDF>
+	</annotation>
+            </species>
+      <species id="CAR1" initialConcentration="2.45" name="CAR1" metaid="metaid_0000020" sboTerm="SBO:0000244" compartment="compartment">
+        <annotation>
+	<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+	<rdf:Description rdf:about="#metaid_0000020">
+	<bqbiol:isVersionOf>
+	<rdf:Bag>
+	<rdf:li rdf:resource="http://identifiers.org/uniprot/P13773"/>
+	</rdf:Bag>
+	</bqbiol:isVersionOf>
+	</rdf:Description>
+	</rdf:RDF>
+	</annotation>
+            </species>
+      <species id="PKA" initialConcentration="1.6" name="PKA" metaid="metaid_0000022" sboTerm="SBO:0000014" compartment="compartment">
+        <annotation>
+	<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+	<rdf:Description rdf:about="#metaid_0000022">
+              <bqbiol:isHomologTo>
+	<rdf:Bag>
+	<rdf:li rdf:resource="http://identifiers.org/uniprot/Q01386"/>
+	</rdf:Bag>
+	</bqbiol:isHomologTo>
+	
+	<bqbiol:isVersionOf>
+	<rdf:Bag>
+	<rdf:li rdf:resource="http://identifiers.org/interpro/IPR002373"/>
+	</rdf:Bag>
+	</bqbiol:isVersionOf>
+	</rdf:Description>
+	</rdf:RDF>
+	</annotation>
+            </species>
+      <species id="incAMP" initialConcentration="1.2" name="incAMP" metaid="metaid_0000023" sboTerm="SBO:0000247" compartment="compartment">
+        <annotation>
+	<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+	<rdf:Description rdf:about="#metaid_0000023">
+	<bqbiol:isVersionOf>
+	<rdf:Bag>
+	<rdf:li rdf:resource="http://identifiers.org/chebi/CHEBI:17489"/>
+	<rdf:li rdf:resource="http://identifiers.org/kegg.compound/C000575"/>
+	</rdf:Bag>
+	</bqbiol:isVersionOf>
+	</rdf:Description>
+	</rdf:RDF>
+	</annotation>
+            </species>
+      <species id="ERK2" initialConcentration="1.13" name="ERK2" metaid="metaid_0000024" sboTerm="SBO:0000014" compartment="compartment">
+        <annotation>
+	<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+	<rdf:Description rdf:about="#metaid_0000024">
+	<bqbiol:isVersionOf>
+	<rdf:Bag>
+	<rdf:li rdf:resource="http://identifiers.org/uniprot/Q54QB1"/>
+	<rdf:li rdf:resource="http://identifiers.org/interpro/IPR008349"/>
+	</rdf:Bag>
+	</bqbiol:isVersionOf>
+	</rdf:Description>
+	</rdf:RDF>
+	</annotation>
+            </species>
+      <species id="REGA" initialConcentration="0.9" name="REGA" metaid="metaid_0000025" sboTerm="SBO:0000014" compartment="compartment">
+        <annotation>
+	<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+	<rdf:Description rdf:about="#metaid_0000025">
+	<bqbiol:isVersionOf>
+	<rdf:Bag>
+	<rdf:li rdf:resource="http://identifiers.org/uniprot/Q23917"/>
+	</rdf:Bag>
+	</bqbiol:isVersionOf>
+	</rdf:Description>
+	</rdf:RDF>
+	</annotation>
+            </species>
+      <species id="excAMP" initialConcentration="0.48" name="excAMP" metaid="metaid_0000026" sboTerm="SBO:0000247" compartment="compartment">
+        <annotation>
+	<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+	<rdf:Description rdf:about="#metaid_0000026">
+	<bqmodel:is>
+	<rdf:Bag>
+	<rdf:li rdf:resource="http://identifiers.org/chebi/CHEBI:17489"/>
+	<rdf:li rdf:resource="http://identifiers.org/kegg.compound/C000575"/>
+	</rdf:Bag>
+	</bqmodel:is>
+	</rdf:Description>
+	</rdf:RDF>
+	</annotation>
+            </species>
+    </listOfSpecies>
+    <listOfParameters>
+      <parameter id="k1" name="k1" metaid="metaid_0000003" value="2"/>
+      <parameter id="k2" name="k2" metaid="metaid_0000004" value="0.9"/>
+      <parameter id="k3" name="k3" metaid="metaid_0000005" value="2.5"/>
+      <parameter id="k4" name="k4" metaid="metaid_0000006" value="1.5"/>
+      <parameter id="k5" name="k5" metaid="metaid_0000007" value="0.6"/>
+      <parameter id="k6" name="k6" metaid="metaid_0000008" value="0.8"/>
+      <parameter id="k7" name="k7" metaid="metaid_0000009" value="1"/>
+      <parameter id="k8" name="k8" metaid="metaid_0000010" value="1.3"/>
+      <parameter id="k9" name="k9" metaid="metaid_0000011" value="0.3"/>
+      <parameter id="k10" name="k10" metaid="metaid_0000012" value="0.8"/>
+      <parameter id="k11" name="k11" metaid="metaid_0000013" value="0.7"/>
+      <parameter id="k12" name="k12" metaid="metaid_0000014" value="4.9"/>
+      <parameter id="k13" name="k13" metaid="metaid_0000015" value="23"/>
+      <parameter id="k14" name="k14" metaid="metaid_0000016" value="4.5"/>
+    </listOfParameters>
+    <listOfReactions>
+      <reaction id="v1" name="v1" metaid="metaid_0000027">
+        <annotation>
+	<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+	<rdf:Description rdf:about="#metaid_0000027">
+	<bqbiol:isVersionOf>
+	<rdf:Bag>
+	<rdf:li rdf:resource="http://identifiers.org/go/GO:0045858"/>
+	</rdf:Bag>
+	</bqbiol:isVersionOf>
+	</rdf:Description>
+	</rdf:RDF>
+	</annotation>
+              <listOfProducts>
+          <speciesReference species="ACA" metaid="_05e1ff95-51a4-43ba-bfd7-ce4171bd18aa"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="CAR1" metaid="_692295cd-1d96-40f1-8012-97e2ec282bf6"/>
+        </listOfModifiers>
+        <kineticLaw metaid="_59caefec-ef40-484d-b478-525b054944bf">
+          <math xmlns="http://www.w3.org/1998/Math/MathML">          
+            <apply>
+              <times/>
+              <ci> k1 </ci>
+              <ci> CAR1 </ci>
+            </apply>
+          </math>
+                </kineticLaw>
+      </reaction>
+      <reaction id="v2" name="v2" metaid="metaid_0000028">
+        <annotation>
+	<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+	<rdf:Description rdf:about="#metaid_0000028">
+	<bqbiol:isVersionOf>
+	<rdf:Bag>
+	<rdf:li rdf:resource="http://identifiers.org/go/GO:0045857"/>
+	</rdf:Bag>
+	</bqbiol:isVersionOf>
+	</rdf:Description>
+	</rdf:RDF>
+	</annotation>
+              <listOfReactants>
+          <speciesReference species="ACA" metaid="_9f9fbc58-22b5-4ab9-bc47-57567d2999c6"/>
+        </listOfReactants>
+        <listOfModifiers>
+          <modifierSpeciesReference species="PKA" metaid="b7da8f0b-ba5f-4c0d-9b81-c523311a5be8"/>
+        </listOfModifiers>
+        <kineticLaw metaid="e611b464-da9f-42d8-a296-71da3dc277c9">
+          <math xmlns="http://www.w3.org/1998/Math/MathML">          
+            <apply>
+              <times/>
+              <ci> k2 </ci>
+              <ci> ACA </ci>
+              <ci> PKA </ci>
+            </apply>
+          </math>
+                </kineticLaw>
+      </reaction>
+      <reaction id="v3" name="v3" metaid="metaid_0000029">
+        <annotation>
+	<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+	<rdf:Description rdf:about="#metaid_0000029">
+	<bqbiol:isVersionOf>
+	<rdf:Bag>
+	<rdf:li rdf:resource="http://identifiers.org/go/GO:0045858"/>
+	</rdf:Bag>
+	</bqbiol:isVersionOf>
+	</rdf:Description>
+	</rdf:RDF>
+	</annotation>
+              <listOfProducts>
+          <speciesReference species="PKA" metaid="_48fcce3d-d369-4fcb-be09-89cf48209930"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="incAMP" metaid="_0a346693-4ea5-4ece-bb14-eef3c333e00d"/>
+        </listOfModifiers>
+        <kineticLaw metaid="fafc4ee9-4e41-48cb-aa27-9602b7a03d84">
+          <math xmlns="http://www.w3.org/1998/Math/MathML">          
+            <apply>
+              <times/>
+              <ci> k3 </ci>
+              <ci> incAMP </ci>
+            </apply>
+          </math>
+                </kineticLaw>
+      </reaction>
+      <reaction id="v4" name="v4" metaid="metaid_0000030">
+        <annotation>
+	<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+	<rdf:Description rdf:about="#metaid_0000030">
+	<bqbiol:isVersionOf>
+	<rdf:Bag>
+	<rdf:li rdf:resource="http://identifiers.org/go/GO:0045857"/>
+	</rdf:Bag>
+	</bqbiol:isVersionOf>
+	</rdf:Description>
+	</rdf:RDF>
+	</annotation>
+              <listOfReactants>
+          <speciesReference species="PKA" metaid="a2616655-a21b-4375-9916-c09ffc531d09"/>
+        </listOfReactants>
+        <kineticLaw metaid="a4b36fa6-5337-4960-896a-357746b39bae">
+          <math xmlns="http://www.w3.org/1998/Math/MathML">          
+            <apply>
+              <times/>
+              <ci> k4 </ci>
+              <ci> PKA </ci>
+            </apply>
+          </math>
+                </kineticLaw>
+      </reaction>
+      <reaction id="v5" name="v5" metaid="metaid_0000031">
+        <annotation>
+	<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+	<rdf:Description rdf:about="#metaid_0000031">
+	<bqbiol:isVersionOf>
+	<rdf:Bag>
+	<rdf:li rdf:resource="http://identifiers.org/go/GO:0045858"/>
+	</rdf:Bag>
+	</bqbiol:isVersionOf>
+	</rdf:Description>
+	</rdf:RDF>
+	</annotation>
+              <listOfProducts>
+          <speciesReference species="ERK2" metaid="def184bb-43c0-4774-9ef2-b366bb52df8e"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="CAR1" metaid="_3d938ce0-8d0d-40fe-9259-d09a56b2d746"/>
+        </listOfModifiers>
+        <kineticLaw metaid="_12411aad-83b1-482d-a015-cb3710faffe6">
+          <math xmlns="http://www.w3.org/1998/Math/MathML">          
+            <apply>
+              <times/>
+              <ci> k5 </ci>
+              <ci> CAR1 </ci>
+            </apply>
+          </math>
+                </kineticLaw>
+      </reaction>
+      <reaction id="v6" name="v6" metaid="metaid_0000032">
+        <annotation>
+	<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+	<rdf:Description rdf:about="#metaid_0000032">
+	<bqbiol:isVersionOf>
+	<rdf:Bag>
+	<rdf:li rdf:resource="http://identifiers.org/go/GO:0045857"/>
+	</rdf:Bag>
+	</bqbiol:isVersionOf>
+	</rdf:Description>
+	</rdf:RDF>
+	</annotation>
+              <listOfReactants>
+          <speciesReference species="ERK2" metaid="b76aa052-c429-455d-b0e8-57269bf8eb6a"/>
+        </listOfReactants>
+        <listOfModifiers>
+          <modifierSpeciesReference species="PKA" metaid="_63a948ed-82cf-4417-aefa-408c188db4ae"/>
+        </listOfModifiers>
+        <kineticLaw metaid="_403580ea-a8f2-43a3-b6b8-d425a97a88e4">
+          <math xmlns="http://www.w3.org/1998/Math/MathML">          
+            <apply>
+              <times/>
+              <ci> k6 </ci>
+              <ci> PKA </ci>
+              <ci> ERK2 </ci>
+            </apply>
+          </math>
+                </kineticLaw>
+      </reaction>
+      <reaction id="v7" name="v7" metaid="metaid_0000033">
+        <annotation>
+	<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+	<rdf:Description rdf:about="#metaid_0000033">
+	<bqbiol:isVersionOf>
+	<rdf:Bag>
+	<rdf:li rdf:resource="http://identifiers.org/go/GO:0045858"/>
+	</rdf:Bag>
+	</bqbiol:isVersionOf>
+	</rdf:Description>
+	</rdf:RDF>
+	</annotation>
+              <listOfProducts>
+          <speciesReference species="REGA" metaid="_1eeab89f-4ef5-4833-b22b-164a5e91551f"/>
+        </listOfProducts>
+        <kineticLaw metaid="ae8cddfe-8e94-4b77-b940-02f40a0d473a">
+          <math xmlns="http://www.w3.org/1998/Math/MathML">          
+            <ci> k7 </ci>
+          </math>
+                </kineticLaw>
+      </reaction>
+      <reaction id="v8" name="v8" metaid="metaid_0000034">
+        <annotation>
+	<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+	<rdf:Description rdf:about="#metaid_0000034">
+	<bqbiol:isVersionOf>
+	<rdf:Bag>
+	<rdf:li rdf:resource="http://identifiers.org/go/GO:0045857"/>
+	</rdf:Bag>
+	</bqbiol:isVersionOf>
+	</rdf:Description>
+	</rdf:RDF>
+	</annotation>
+              <listOfReactants>
+          <speciesReference species="REGA" metaid="d755e7a6-f4e5-4636-87ad-481007502379"/>
+        </listOfReactants>
+        <listOfModifiers>
+          <modifierSpeciesReference species="ERK2" metaid="_1a7f59e6-4b9c-4ea7-9764-aa3210cf3e7b"/>
+        </listOfModifiers>
+        <kineticLaw metaid="_7200f938-d948-4124-ab4e-1331e99e3ebb">
+          <math xmlns="http://www.w3.org/1998/Math/MathML">          
+            <apply>
+              <times/>
+              <ci> k8 </ci>
+              <ci> ERK2 </ci>
+              <ci> REGA </ci>
+            </apply>
+          </math>
+                </kineticLaw>
+      </reaction>
+      <reaction id="v9" name="v9" metaid="metaid_0000035">
+        <annotation>
+	<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+	<rdf:Description rdf:about="#metaid_0000035">
+	<bqbiol:isVersionOf>
+	<rdf:Bag>
+	<rdf:li rdf:resource="http://identifiers.org/go/GO:0006171"/>
+	</rdf:Bag>
+	</bqbiol:isVersionOf>
+	</rdf:Description>
+	</rdf:RDF>
+	</annotation>
+              <listOfProducts>
+          <speciesReference species="incAMP" metaid="e01a23be-22d9-4939-9204-f57c89014feb"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="ACA" metaid="_71032697-f075-47cc-8b18-b60058ae7f0b"/>
+        </listOfModifiers>
+        <kineticLaw metaid="_5373088d-13f8-4ac5-b7a9-ca8e517b7505">
+          <math xmlns="http://www.w3.org/1998/Math/MathML">          
+            <apply>
+              <times/>
+              <ci> k9 </ci>
+              <ci> ACA </ci>
+            </apply>
+          </math>
+                </kineticLaw>
+      </reaction>
+      <reaction id="v10" name="v10" metaid="metaid_0000036">
+        <annotation>
+	<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+	<rdf:Description rdf:about="#metaid_0000036">
+	<bqbiol:isVersionOf>
+	<rdf:Bag>
+	<rdf:li rdf:resource="http://identifiers.org/go/GO:0006198"/>
+	</rdf:Bag>
+	</bqbiol:isVersionOf>
+	</rdf:Description>
+	</rdf:RDF>
+	</annotation>
+              <listOfReactants>
+          <speciesReference species="incAMP" metaid="_99d2ece7-cacb-4144-bf1c-0858965c4b83"/>
+        </listOfReactants>
+        <listOfModifiers>
+          <modifierSpeciesReference species="REGA" metaid="_3a82502e-68c7-4cf9-abb9-0b59e96c09fb"/>
+        </listOfModifiers>
+        <kineticLaw metaid="_65bdb692-860d-4aab-8f13-83801d4309ba">
+          <math xmlns="http://www.w3.org/1998/Math/MathML">          
+            <apply>
+              <times/>
+              <ci> k10 </ci>
+              <ci> REGA </ci>
+              <ci> incAMP </ci>
+            </apply>
+          </math>
+                </kineticLaw>
+      </reaction>
+      <reaction id="v11" name="v11" metaid="metaid_0000037">
+        <annotation>
+	<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+	<rdf:Description rdf:about="#metaid_0000037">
+	<bqbiol:isVersionOf>
+	<rdf:Bag>
+	<rdf:li rdf:resource="http://identifiers.org/go/GO:0006171"/>
+	</rdf:Bag>
+	</bqbiol:isVersionOf>
+	</rdf:Description>
+	</rdf:RDF>
+	</annotation>
+              <listOfProducts>
+          <speciesReference species="excAMP" metaid="d69d8f31-d600-4c0f-917e-dbe527de261e"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="ACA" metaid="b79fd4a2-66f9-4fc8-874f-0e38fdda05ca"/>
+        </listOfModifiers>
+        <kineticLaw metaid="_4636af2f-842b-49d6-b7e5-62a66a50d39f">
+          <math xmlns="http://www.w3.org/1998/Math/MathML">          
+            <apply>
+              <times/>
+              <ci> k11 </ci>
+              <ci> ACA </ci>
+            </apply>
+          </math>
+                </kineticLaw>
+      </reaction>
+      <reaction id="v12" name="v12" metaid="metaid_0000038">
+        <annotation>
+	<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+	<rdf:Description rdf:about="#metaid_0000038">
+	<bqbiol:isVersionOf>
+	<rdf:Bag>
+	<rdf:li rdf:resource="http://identifiers.org/go/GO:0006198"/>
+	</rdf:Bag>
+	</bqbiol:isVersionOf>
+	</rdf:Description>
+	</rdf:RDF>
+	</annotation>
+              <listOfReactants>
+          <speciesReference species="excAMP" metaid="_98677fea-dec1-4dd9-ad65-1027cc32fc3c"/>
+        </listOfReactants>
+        <kineticLaw metaid="cf9d8d4a-110f-4231-9668-90177ccf8b19">
+          <math xmlns="http://www.w3.org/1998/Math/MathML">          
+            <apply>
+              <times/>
+              <ci> k12 </ci>
+              <ci> excAMP </ci>
+            </apply>
+          </math>
+                </kineticLaw>
+      </reaction>
+      <reaction id="v13" name="v13" metaid="metaid_0000039">
+        <annotation>
+	<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+	<rdf:Description rdf:about="#metaid_0000039">
+	<bqbiol:isVersionOf>
+	<rdf:Bag>
+	<rdf:li rdf:resource="http://identifiers.org/go/GO:0045858"/>
+	</rdf:Bag>
+	</bqbiol:isVersionOf>
+	</rdf:Description>
+	</rdf:RDF>
+	</annotation>
+              <listOfProducts>
+          <speciesReference species="CAR1" metaid="_3b117194-7ee9-47b4-85ad-1d4a9a73ad1b"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="excAMP" metaid="_3bb173ec-b156-4103-8a2e-c621a9c70389"/>
+        </listOfModifiers>
+        <kineticLaw metaid="b66974d6-e5b6-498f-bf0c-5901cea64bb7">
+          <math xmlns="http://www.w3.org/1998/Math/MathML">          
+            <apply>
+              <times/>
+              <ci> k13 </ci>
+              <ci> excAMP </ci>
+            </apply>
+          </math>
+                </kineticLaw>
+      </reaction>
+      <reaction id="v14" name="v14" metaid="metaid_0000040">
+        <annotation>
+	<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+	<rdf:Description rdf:about="#metaid_0000040">
+	<bqbiol:isVersionOf>
+	<rdf:Bag>
+	<rdf:li rdf:resource="http://identifiers.org/go/GO:0045857"/>
+	</rdf:Bag>
+	</bqbiol:isVersionOf>
+	</rdf:Description>
+	</rdf:RDF>
+	</annotation>
+              <listOfReactants>
+          <speciesReference species="CAR1" metaid="_54bd1e44-ce41-4855-bf51-634522a61f67"/>
+        </listOfReactants>
+        <kineticLaw metaid="_481d3468-d9a9-4127-a671-65cde124ab29">
+          <math xmlns="http://www.w3.org/1998/Math/MathML">          
+            <apply>
+              <times/>
+              <ci> k14 </ci>
+              <ci> CAR1 </ci>
+            </apply>
+          </math>
+                </kineticLaw>
+      </reaction>
+    </listOfReactions>
+  </model>
+</sbml>
